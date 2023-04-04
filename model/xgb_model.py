@@ -1,5 +1,8 @@
 import pickle
-df = pickle.load(open('dataframe.pkl', 'rb'))
+import os
+file_path = os.path.abspath('../mlb_data/dataframe.pkl')
+df = pickle.load(open(file_path, 'rb'))
+
 df.shape
 
 encode_me = [x for x in df.keys() if 'object' in str(df[x].dtype)]
@@ -69,8 +72,10 @@ def cal_curve(data, bins):
 
     plt.tight_layout()
     plt.show()
-
-outcomes,predictions,probabilities = pickle.load(open('baseline.pkl','rb'))
+import os
+file_path = os.path.abspath('../covers_data/baseline.pkl')
+outcomes,predictions,probabilities= pickle.load(open(file_path, 'rb'))
+ 
 data = [
     (outcomes, predictions, probabilities, 'Casino'),
     (y_test,xgb_test_preds, xgb_test_proba, 'XGBoost')
