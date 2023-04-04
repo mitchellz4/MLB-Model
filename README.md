@@ -31,12 +31,23 @@ In the same directory run the
 ```
 powerrankings.py file
 ```
-In the model directory you can run the hyperparam.py file to find better params or tweak them yourself
+In the model directory you can run the 
+```
+hyperparam.py 
+```
+file to find better params or tweak them yourself
 
-In the model directory run the xgb_model.py file 
 
-In the main directory run the mlb_model_daily.ipynb file
+## RUN THIS CODE IF YOU ARE USING THE DATA PROVIDED
 
+In the model directory run the 
+```
+xgb_model.py file 
+```
+In the main directory run the 
+```
+mlb_model_daily.ipynb
+```
 This is a notebook for now until I can get it all tuned and looking nice in one main.py file
 
 Have not added in the kelly criteria yet, as still trying to find a way to get odds for historical games to train model on that.
