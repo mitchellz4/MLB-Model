@@ -7,7 +7,7 @@ https://rdpharr.github.io/project_notes/baseball/benchmark/webscraping/brier/acc
 ## This repository contains all of the data files so you should only have to download daily data, will be updating as the season continues.
 
 ## I have this repository in my main coding folder so make sure to do that or file paths will be messed up
-EX = \users\"user_name"\"coding_file"\MLB-Model
+EX = \users\"user_name" \"coding_file"\MLB-Model
 
 ## Only Run the Following Code if Updating All Data
 
