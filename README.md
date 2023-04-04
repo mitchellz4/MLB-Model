@@ -44,6 +44,8 @@ In the model directory run the
 ```
 xgb_model.py file 
 ```
+### The xgb_model only needs ran if you are adjusting the parameters, data, etc.
+
 In the main directory run the 
 ```
 mlb_model_daily.ipynb
